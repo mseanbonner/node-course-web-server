@@ -21,10 +21,10 @@ app.use((req, res, next) => {
   next();  // must call or server hangs
 });
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs');
-  console.log('Display maint mode - abort');
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs');
+//   console.log('Display maint mode - abort');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
